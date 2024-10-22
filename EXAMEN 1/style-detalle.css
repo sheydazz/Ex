@@ -1,0 +1,156 @@
+.recipe-detail-container {
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recipe-image {
+  max-width: 100%;
+  height: auto;
+}
+.recipe-detail {
+  width: 1000px;
+}
+
+/* Recipe Key */
+.recipe-key-container {
+  width: 24%;
+}
+.recipe-key {
+  background-color: #fbf8f3;
+  padding: 42px 32px 16px;
+  font-family: Arial, sans-serif;
+}
+.recipekey-title {
+  font-size: 30px;
+}
+.recipe-key ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-key li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 20px;
+}
+.recipe-key .tag {
+  margin-right: 10px;
+}
+.tags-and-buttton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#recipe-title {
+  color: rgb(34, 34, 34);
+  font-family: Arial, sans-serif;
+  margin-top: 0;
+  text-align: start;
+  font-size: 66px;
+}
+.view-button {
+  font-size: 14px;
+  border: none;
+  padding: 4px;
+}
+/* libro */
+.book-container {
+  margin-top: 30px;
+  background-color: #fbf8f3;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+
+  justify-content: center;
+}
+
+.title-book {
+  color: rgb(48, 48, 48);
+  font-family: monospace;
+  font-size: 30px;
+  line-height: 1.4;
+}
+.book-txtcontent {
+  color: rgb(48, 48, 48);
+  width: 300px;
+  margin: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.input-serch-email {
+  
+  display: flex;
+  align-items: center;
+  background-color: #ffded6;
+  border: 1px solid #2a2b2a;
+  font-size: 16px;
+  padding: 8px;
+  height: 40px;
+  margin: 40px;
+  margin-bottom: 2px;
+}
+.input-serch-email input[type="email"] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+}
+ .button-mybook {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #303130;
+  margin: 30px;
+  padding-top: 0;
+  background-color: #ffded6;
+  border: none;
+  padding: 20px;
+  width: 300px;
+}
+/* instruccion */
+#recipe-instruction{
+  margin-top: 70px;
+  font-size: 27px;
+  font-family: Arial,sans-serif;
+  line-height: 1.7;
+  color: #343534;
+}
+#recipe-img:hover .pinterest{
+  filter: grayscale(80%);
+  visibility: visible;
+
+}
+
+.img-container{
+  display: inline-block;
+  position: relative;
+}
+
+.img-container:hover .pinterest{
+visibility: visible;
+background-color:rgb(187, 0, 0);
+}
+.pinterest {
+  visibility: hidden;
+  font-size: 40px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;  
+  top: 0;
+  transform: none; 
+  border-radius: 0; 
+  color: white;
+  padding: 14px;
+  margin: 20px;
+ background-color:rgb(187, 0, 0);
+}
+
+

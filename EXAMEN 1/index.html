@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>minimalist baker</title>
+    <!-- propios-->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-header">
+        <div class="search-container">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="SEARCH MINIMALIST BAKER" />
+        </div>
+        <div class="social">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header">
+          <div class="vinculos">
+            <a href="">All Recipes</a>
+            <a href="">Vegan</a>
+            <a href="">Gluten-Free</a>
+          </div>
+
+          <img class="logo" src="/imagenes/logo.png" alt="" />
+
+          <div class="vinculos">
+            <a href="">About</a>
+            <a href="">Shop</a>
+            <a href="">Blogger Resorce</a>
+          </div>
+        </div>
+        <div class="informacion-header">
+          <div class="info-logo">
+            <img class="isologo" src="/imagenes/isologo.png" alt="" />
+            <img class="texto" src="/imagenes/texto.png" alt="" />
+          </div>
+          <span class="texto-principal">RECIPES </span>
+          <div class="ver-todo">
+            <span>SHOW ME EVERYTHING</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="contendor-recetas">
+          <div class="card-content">
+            <div class="card">
+              <img
+              src="https://minimalistbaker.com/wp-content/uploads/2023/10/Cozy-Curry-Noodle-Soup-Thai-Inspired-10-1365x2048.jpg"
+              alt="Cozy Curry Noodle Soup"
+              class="card-img"
+              data-recipe="1"
+              onclick="goToRecipe(this)"
+            />
+            
+              <div class="contenido">
+                <div class="tags">
+                  <span class="tag GF">GF</span>
+                  <span class="tag DF">DF</span>
+                  <span class="tag NS">NS</span>
+                </div>
+                <h2 class="title-card">
+                  Cozy Curry Noodle Soup <br />(Thai-Inspired)
+                </h2>
+                <button class="new-recipes-btn">New Recipes</button>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <img
+              src="https://minimalistbaker.com/wp-content/uploads/2016/02/DELICIOUS-1-POT-Lentil-and-Black-Bean-Chili-Smoky-hearty-PROTEIN-and-fiber-packed-vegan-glutenfree-lentils-chili-healthy-recipe.jpg"
+              alt="1-Pot Red Lentil Chili poket"
+              class="card-img"
+              data-recipe="2"
+              onclick="goToRecipe(this)"
+            />
+              <div class="contenido">
+                <div class="tags">
+                  <span class="tag GF">GF</span>
+                  <span class="tag VG">VG</span>
+                  <span class="tag V">V</span>
+                  <span class="tag DF">DF</span>
+                  <span class="tag NS">NS</span>
+                </div>
+                <h2 class="title-card">1-Pot Red Lentil Chili poket</h2>
+                <button class="new-recipes-btn hearty">Hearty Meals</button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+              <img
+              src="https://minimalistbaker.com/wp-content/uploads/2018/10/AMAZING-Carrot-Apple-Snack-Cake-1-Bowl-simple-ingredients-SO-tender-and-delicioius-vegan-glutenfree-cake-carrot-cake-minimalistbaker-recipe-5-600x900.jpg"
+              alt="Carrot Apple Snack Cake"
+              class="card-img"
+              data-recipe="3"
+              onclick="goToRecipe(this)"
+            />
+              <div class="contenido">
+                <div class="tags">
+                  <span class="tag GF">GF</span>
+                  <span class="tag VG">VG</span>
+                  <span class="tag V">V</span>
+                  <span class="tag DF">DF</span>
+                </div>
+                <h2 class="title-card">1-Bowl Carrot Apple Snack Cake</h2>
+                <button class="new-recipes-btn dessert">Desserts</button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+              <img
+              src="https://minimalistbaker.com/wp-content/uploads/2017/10/AMAZING-Pumpkin-Mac-n-Cheese-10-ingredients-cheesy-hearty-SO-delicious-vegan-plantbased-pumpkin-pasta-recipe-glutenfree.jpg"
+              alt="How to Roast Pumpkin pieked"
+              class="card-img"
+              data-recipe="4"
+              onclick="goToRecipe(this)"
+            />
+              <div class="contenido">
+                <div class="tags">
+                  <span class="tag GF">GF</span>
+                  <span class="tag VG">VG</span>
+                  <span class="tag V">V</span>
+                  <span class="tag DF">DF</span>
+                  <span class="tag NS">NS</span>
+                </div>
+                <h2 class="title-card">How to Roast Pumpkin pieked</h2>
+                <button class="new-recipes-btn whats-season">
+                  What's In Season
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="ver-todo">
+            <span>SHOW ME EVERYTHING </span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="contendor-cardsemanal">
+          <div class="card-semanal">
+            <div class="contenido-cardsemanal">
+              <span class="title-recetasemanal">PICK OF THE WEEK</span>
+              <h2 class="title-cardsemanal">
+                Vegan Pumpkin Cinnamon Rolls
+              </h2>
+              <p class="cardsemanal-description">
+                1-Bowl Vegan Pumpkin Cinnamon Rolls made with 10 ingredients using easy methods. Warm, gooey, perfectly sweet, and subtly spiced — perfect for fall!
+              </p>
+              <button class="view-button"
+              data-recipe="9"
+              onclick="goToRecipe(this)">VIEW RECIPE</button>
+            </div>
+            <img
+              src="https://minimalistbaker.com/wp-content/uploads/2014/10/1-Bowl-Vegan-PUMPKIN-Cinnamon-Rolls-Simple-perfectly-spiced-delicious.jpg"
+              alt="Creamy Thai Carrot Soup"
+              data-recipe="9"
+              onclick="goToRecipe(this)"
+            />
+          </div>
+        </div>
+        <div class="contendor-sucripcion">
+          <span class="text-delicius">*Want more deliciousness?</span>
+          <span class="txt-informacion"
+            >Subscribe here and we’ll send you an email as new recipes are
+            published AND our fan favorites ebook!</span
+          >
+          <div class="inputsubscripcion-container">
+            <input type="email" placeholder="EMAIL ADDRESS..." />
+            <button>SUBMIT</button>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="content-secondcontainer">
+          <div class="input-serch">
+            <input type="text" placeholder="SEARCH MINIMALIST BAKER" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="container-recipe-keys">
+            <div class="title-keys">
+              <span>RECIPE KEY</span>
+            </div>
+            <div class="recipe-content">
+                <div class="icon-item">
+                  <span class="tag GF">GF</span>
+                  <span class="icon-text">Gluten-Free</span>
+                </div>
+                <div class="icon-item">
+                  <span class="tag VG">VG</span>
+                  <span class="icon-text">Vegan</span>
+                </div>
+                <div class="icon-item">
+                  <span class="tag V">V</span>
+                  <span class="icon-text">Vegetarian</span>
+                </div>
+                <div class="icon-item">
+                  <span class="tag DF">DF</span>
+                  <span class="icon-text">Dairy-Free</span>
+                </div>
+                <div class="icon-item">
+                  <span class="tag NS">NS</span>
+                  <span class="icon-text">Naturally Sweetened</span>
+                </div>
+    
+            </div>
+          </div>
+          <div class="container-popular-recipes">
+            <div class="title-popular-recipes">
+              <h2>RECENT READER FAVORITES </h2>
+              <div class="star-content">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="conatiner-popularcards">
+              <!-- Tarjeta 1 -->
+              <div class="popular-card">
+                <div class="popularcar-img">
+                  <span class="circle-img"></span>
+                  <img
+                    src="https://minimalistbaker.com/wp-content/uploads/2023/05/Vegan-Chocolate-Peanut-Butter-Ice-Cream-Bars-9-1365x2048.jpg"
+                    alt="Chocolate Peanut Butter Ice Cream Bars"
+                    class="card-img"
+                  />
+                </div>
+                <div class="popularcard-content" data-recipe="5" onclick="goToRecipe(this)">
+                  <span class="popularcard-number">01</span>
+                  <span class="popularcard-title">Chocolate Peanut Butter Ice Cream Bars (Vegan)</span>
+                  <div class="popularcard-icon">
+                    <span class="tag GF">GF</span>
+                    <span class="tag DF">DF</span>
+                    <span class="tag NS">NS</span>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Tarjeta 2 -->
+              <div class="popular-card">
+                <div class="popularcar-img">
+                  <span class="circle-img"></span>
+                  <img
+                    src="https://minimalistbaker.com/wp-content/uploads/2023/09/Kale-Apple-Slaw-with-Dijon-Vinaigrette-4-1365x2048.jpg"
+                    alt="Kale Apple Slaw with Dijon Vinaigrette"
+                    class="card-img"
+                  />
+                </div>
+                <div class="popularcard-content" data-recipe="6" onclick="goToRecipe(this)">
+                  <span class="popularcard-number">02</span>
+                  <h2 class="popularcard-title">Kale Apple Slaw with Dijon Vinaigrette</h2>
+                  <div class="popularcard-icon">
+                    <span class="tag GF">GF</span>
+                    <span class="tag VG">VG</span>
+                    <span class="tag V">V</span>
+                    <span class="tag DF">DF</span>
+                    <span class="tag NS">NS</span>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Tarjeta 3 -->
+              <div class="popular-card">
+                <div class="popularcar-img">
+                  <span class="circle-img"></span>
+                  <img
+                    src="https://minimalistbaker.com/wp-content/uploads/2023/09/Vegan-Chocolate-Cherry-Protein-Shake-7-1337x2048.jpg"
+                    alt="Chocolate Cherry Protein Shake"
+                    class="card-img"
+                  />
+                </div>
+                <div class="popularcard-content" data-recipe="7" onclick="goToRecipe(this)">
+                  <span class="popularcard-number">03</span>
+                  <h2 class="popularcard-title">Chocolate Cherry Protein Shake</h2>
+                  <div class="popularcard-icon">
+                    <span class="tag GF">GF</span>
+                    <span class="tag VG">VG</span>
+                    <span class="tag V">V</span>
+                    <span class="tag DF">DF</span>
+                    <span class="tag NS">NS</span>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Tarjeta 4 -->
+              <div class="popular-card">
+                <div class="popularcar-img">
+                  <span class="circle-img"></span>
+                  <img
+                    src="https://minimalistbaker.com/wp-content/uploads/2023/11/Late-Summer-White-Bean-Minestrone-12-1365x2048.jpg"
+                    alt="Veggie-Packed White Bean Minestrone"
+                    class="card-img"
+                  />
+                </div>
+                <div class="popularcard-content" data-recipe="8" onclick="goToRecipe(this)">
+                  <span class="popularcard-number">04</span>
+                  <h2 class="popularcard-title">Veggie-Packed White Bean Minestrone</h2>
+                  <div class="popularcard-icon">
+                    <span class="tag GF">GF</span>
+                    <span class="tag VG">VG</span>
+                    <span class="tag V">V</span>
+                    <span class="tag DF">DF</span>
+                    <span class="tag NS">NS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+        </div>
+      </div>
+    </div>
+ 
+    <footer>
+      <div class="fotter-content">
+        <div class="social-media">
+          <p>FIND US</p>
+          <div class="icons">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-x-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="logo">
+          <img src="/imagenes/isologo.png" alt="Logo MB">
+        </div>
+       <span class="eslogan">
+        Simple Recipes That
+        Make You Feel Good
+       </span>  
+      </div>
+      <div class="fotter-legal">
+        <div class="nav-links">
+          <a href="">Recipes</a>
+          <a href="">Cookbook</a>
+          <a href="">Shop</a>
+          <a href="">About</a>
+        </div>
+        <div class="legal">
+          <p>&copy;MINIMALISTBAKER.COM</p>
+          <a href="">Privacy Policy</a>
+          <a href="">Terms</a>
+        </div>
+      </div>
+   
+    </footer>
+    <script src="/index.js"></script>
+  </body>
+</html>
